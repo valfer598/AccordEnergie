@@ -1,0 +1,197 @@
+.Champ {
+    position: relative;
+    top: 150px;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.Champ h1 {
+    position: relative;
+    text-align: center;
+    font-size: 2em;
+    color: black;
+    bottom: 20px;
+    font-family: "Abel", sans-serif;
+}
+
+
+.Menu {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    background-color: rgba(21, 58, 181, 0.742);
+    padding-bottom: 15px;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    flex-wrap: wrap-reverse;
+    backdrop-filter: blur(10px);
+}
+
+
+
+.logo img {
+    position: fixed;
+    left: 0;
+    top: -60px;
+    padding: 5% 5% 1% 5%;
+    width: 120px;
+    flex-shrink: 2;
+    flex-wrap: wrap;
+    z-index: 100;
+}
+
+
+
+.barre_menu {
+    display: inline-flex;
+    align-items: center;
+    padding-right: 200px;
+}
+
+
+
+.reglage img {
+    position: fixed;
+    top: 40px;
+    right: 90px;
+    width: 50px;
+    z-index: 100;
+}
+
+.reglage a:hover {
+    cursor: pointer;
+}
+
+
+.barre_menu ul {
+    display: flex;
+    text-align: center;
+    padding-top: 10px;
+    overflow: hidden;
+    
+}
+
+
+.Menu li {
+    display: inline-block;
+    padding: 30px 30px;
+    flex-shrink: 2;
+}
+
+
+
+.dropdown-child {
+    display: none;
+    min-width: 10px;
+}
+
+
+
+.dropdown-child a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+.dropdown-child a {
+    position: relative;
+    text-decoration: none;
+}
+
+.dropdown-child a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: width 0.5s ease; /* Modification de la propriété de transition */
+}
+
+.dropdown-child a:hover:before {
+    width: 100%;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+a:hover {
+    color: gray;
+    transition-duration: 0.5s;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    display: block;
+    width: 100%;
+    font-family: o-HelveticaNeue, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    transition: border-color 0.2s ease-in-out 0s, outline-offset 0.2s ease-in-out 0s;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: initial;
+    border-bottom: 0.125rem solid black;
+    padding: 2.1875rem 0.9375rem 0.6875rem 0rem;
+    text-overflow: ellipsis;
+    outline: 0px;
+}
+
+
+input[type="submit"] {
+    font-family: o-HelveticaNeue, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    padding: 0.8125rem 2.8125rem;
+    max-width: 18.75rem;
+    border-width: 0.0625rem;
+    border-radius: 0rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    vertical-align: middle;
+    overflow: hidden;
+    transition: border-color 0.2s ease-in-out 0s, background-color 0.2s ease-in-out 0s, color 0.2s ease-in-out 0s, outline-offset 0.2s ease-in-out 0s;
+    user-select: none;
+    outline-offset: 0.25rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: gray;
+}
+
+
+.Connexion a {
+    color: black;
+    font-size: 20px;
+}
+
+.Inscription a {
+    color: black;
+    font-size: 20px;
+}

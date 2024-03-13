@@ -1,0 +1,151 @@
+.Menu {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    background-color: rgba(21, 58, 181, 0.742);
+    padding-bottom: 15px;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    flex-wrap: wrap-reverse;
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    position: fixed;
+    left: 0;
+    top: -60px;
+    padding: 5% 5% 1% 5%;
+    width: 120px;
+    flex-shrink: 2;
+    flex-wrap: wrap;
+    z-index: 100;
+}
+
+
+
+.barre_menu {
+    display: inline-flex;
+    align-items: center;
+    padding-right: 200px;
+}
+
+
+
+.reglage img {
+    position: fixed;
+    top: 40px;
+    right: 90px;
+    width: 50px;
+    z-index: 100;
+}
+
+.reglage a:hover {
+    cursor: pointer;
+}
+
+
+.barre_menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 10px;
+    overflow: hidden;
+    flex-shrink: 2;
+    
+}
+
+
+.Menu li {
+    display: inline-block;
+    padding: 30px 30px;
+    flex-shrink: 2;
+}
+
+
+
+.dropdown-child {
+    display: none;
+    min-width: 10px;
+}
+
+
+
+.dropdown-child a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+.dropdown-child a {
+    position: relative;
+    text-decoration: none;
+}
+
+.dropdown-child a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: width 0.5s ease; /* Modification de la propriété de transition */
+}
+
+.dropdown-child a:hover:before {
+    width: 100%;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+a:hover {
+    color: gray;
+    transition-duration: 0.5s;
+}
+
+#Missions {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    position: relative;
+    top: 150px;
+}
+
+#Missions h1 {
+    font-size: 50px;
+    font-family: "Abel", sans-serif;
+    margin-bottom: 60px;
+}
+
+#Missions img {
+    width: 500px;
+    border-radius: 15px;
+    margin-bottom: 100px;
+}
+
+#Missions img:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px;
+}

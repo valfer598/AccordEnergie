@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AccordEnergie </title>
+    <link rel="stylesheet" href="/css/Planning.css">
+    <link rel="shortcut icon" href="/image/logo4.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <figure class="logo">
+        <img src="/image/logo4.png" alt="logo">
+    </figure>
+
+    <figure class="reglage">
+        <a href="Reglage.php">
+            <img src="/image/reglage.png">
+        </a>
+    </figure>
+
+    <header class="Menu">
+        <div class="barre_menu">
+            <ul>
+                <li><a href="pageProfil.php">Accueil</a></li>
+                <div class="dropdown">
+                    <li class="mainmenubtn"><a href="#">Intervention</a>
+                        <div class="dropdown-child">
+                            <a href="PlanningClient.php">Planning</a>
+                            <a href="Commentaire.php">Commentaire</a>
+                        </div>
+                    </li>
+                </div>
+                
+                <div class="dropdown">
+                    <li class="mainmenubtn"><a href="Contact.php">Contact</a>
+                        <div class="dropdown-child">
+                            <a href="Aide.php">Aide</a>
+                            <a href="Recrutement.php">Recrutement</a>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </header>
+
+    <div>
+        <h1>Planning</h1>
+    </div>
+    
+        <table border="1">
+            <tr>
+                <th>Nom Intervenant</th>
+                <th>Date</th>
+                <th>Nom Client</th>
+                <th>Priorité</th>
+                <th>Statut</th>
+            </tr>
+
+            {% for intervention in clientInterventions %}
+            <tr>
+                <td>{{ intervention.nom_intervenant }}</td>
+                <td>{{ intervention.date }}</td>
+                <td>{{ intervention.nom_client }}</td>
+                <td>{{ intervention.priorite }}</td>
+                <td>{{ intervention.statut }}</td>
+                <td><button onclick="commentaire()">Commentaire</button></td>
+            </tr>
+        {% endfor %}
+
+        </table>
+
+        <script>
+            function commentaire() {
+            window.location.href = "Commentaire.php";
+        }
+        </script>
+
+</body>
+</html>

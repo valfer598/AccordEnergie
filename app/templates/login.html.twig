@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AccordEnergie </title>
+    <link rel="shortcut icon" href="/image/logo4.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/Register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <figure class="logo">
+        <img src="/image/logo4.png" alt="logo">
+    </figure>
+    <figure class="reglage">
+        <a href="Reglage.php">
+            <img src="/image/reglage.png">
+        </a>
+    </figure>
+    <header class="Menu">
+        <div class="barre_menu">
+            <ul>
+                <li><a href="/index.php">Accueil</a></li>
+                <div class="dropdown">
+                    <li class="mainmenubtn"><a href="#">Intervention</a>
+                        <div class="dropdown-child">
+                            <a href="Missions.php">Missions</a>
+                            <a href="Planning.php">Planning</a>
+                            <a href="Commentaire.php">Commentaire</a>
+                        </div>
+                    </li>
+                </div>
+                <div class="dropdown">
+                    <li class="mainmenubtn"><a href="Contact.php">Contact</a>
+                        <div class="dropdown-child">
+                            <a href="Aide.php">Aide</a>
+                            <a href="Recrutement.php">Recrutement</a>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </header>
+
+    <div class="Champ">
+        <h1>Se connecter</h1>
+        <form action="login.php" method="post">
+            <p><input type = "email" name= "email" placeholder = "Entrez votre email" required></p>
+            <p><input type = "password" name = "password" placeholder="Mot de passe" required></p>
+            <p><input type = "submit" value = "Se connecter" name = "bouton" required></p>
+            <span class="Inscription"><a href="register.php">Pas encore inscrit?</a></span>
+        </form>
+    </div>
+
+    <script>
+    function showAlert() {
+        alert("Mail ou mot de passe erroné");
+    }
+    </script>
+
+
+</body>
+</html>
